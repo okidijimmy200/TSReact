@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import ThreadCard from "./ThreadCard";
 import { getThreadsByCategory } from "../../../services/DataService";
 import Category from "../../../models/Category";
+
 const Main = () => {
   const { categoryId } = useParams();
   const [category, setCategory] = useState<Category | undefined>();
